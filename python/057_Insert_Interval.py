@@ -32,7 +32,7 @@ class Solution(object):
 
     def check_overlap(self, curr_int, new_int):
         if curr_int.start <= new_int.start:
-           if curr_int.end > new_int.start:
+           if curr_int.end >= new_int.start:
                return True
         else:
             if curr_int.start <= new_int.end:
